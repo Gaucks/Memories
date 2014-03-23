@@ -40,43 +40,19 @@
 			</div>
     		
     		<ul class="menu">
-    		
-    			<li class="menu">
-    				<img src="{{ asset('bundles/memoriesbox/images/menu/Gear.png') }}" class="menuimg" alt="Une image" />Symfony2
-					<span class="show">v</span>
-    			</li>
-    			<li class="menu">
-    				<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />Jquery
-					<span class="show">v</span>
-    			</li>
-    			
-    			<li class="menu">
-    				<img src="{{ asset('bundles/memoriesbox/images/menu/Gear.png') }}" class="menuimg" alt="Une image" />Symfony2
-					<span class="show">v</span>
-    			</li>
-    			<li class="menu">
-    				<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />Jquery
-					<span class="show">v</span>
-    			</li>
-    			
-    			<li class="menu">
-    				<img src="{{ asset('bundles/memoriesbox/images/menu/Gear.png') }}" class="menuimg" alt="Une image" />Symfony2
-					<span class="show">v</span>
-    			</li>
-    			<li class="menu">
-    				<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />Jquery
-					<span class="show">v</span>
-    			</li>
-    			<li class="menu_slice">
-    				- Jquery
-					<li class="menu_slice">
-    				- Jquery
-    			</li>
-    			<li class="menu_slice">
-    				- Aligner les 3 colonnes en hauteur
-    			</li>
-    			</li>
+    	
+    	{% for f in folder %}
+    		<li class="menu">
+	    				<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />{{ f.folder }}
+						<span class="show">v</span>
+	    	</li>	
+				{% for key in f.memotitle.titre %}
+	    			<li class="menu_slice">
+	    				- {{ key }}
+	    			</li>
+    			{% endfor %}
 
+		{% endfor %}
     		</ul>
     		 
     	</div>

@@ -10,10 +10,16 @@
 	border: 1px solid #C0C0C0;
 	box-shadow: inset 0 1px 2px #e4e4e4;
 	margin-bottom: 20px;
+	background: #333;
+	height: 100%
 }
 
-	#box_add_last_new_ctleft{ width:48%; float: left; }
-	#box_add_last_new_ctleft img#headline{ width: 100% }
+	#box_add_last_new_ctleft{ 
+		width:48%; 
+		float: left; 
+	}
+	
+	#box_add_last_new_ctleft img#headline{ }
 	
 	#box_add_last_new_ctright{ width:50%; float: right }
 	
