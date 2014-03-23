@@ -1,3 +1,7 @@
 memories_box_homepage:
     pattern:  /
     defaults: { _controller: MemoriesBoxBundle:Box:index }
+
+addfolder:
+    pattern:  /add-folder
+    defaults: { _controller: MemoriesBoxBundle:Box:addFolder }

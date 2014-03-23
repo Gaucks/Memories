@@ -1,0 +1,16 @@
+   <ul class="menu">
+    	
+    	{% for f in folder %}
+    		<li class="menu">
+	    		<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />{{ f.folder }}
+					<span class="show">v</span>
+	    	</li>	
+			{% for key in f.memotitle.titre %}
+    			<li class="menu_slice">
+    				- {{ key }}
+    			</li>
+			{% endfor %}
+
+		{% endfor %}
+		
+    </ul>

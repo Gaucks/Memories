@@ -17,6 +17,12 @@
     <div id="site">
     
     	<div id="header">
+    		<div id="menu_header">
+    			<ul class="menu">
+    				<li class="menu">Nouveau mémo</li>
+    				<li class="menu"><a href="{{ path('addfolder') }}" alt="" />Nouveau dossier</a> </li>
+    			</ul>
+    		</div>
     		<div id="recherche_box"><input type="text" placeholder="Ceci est un vrai champ de recherche"/></div>
     		<div class="clear"></div>
     	 </div>
@@ -39,27 +45,13 @@
 				<div class="clear"></div>
 			</div>
     		
-    		<ul class="menu">
-    	
-    	{% for f in folder %}
-    		<li class="menu">
-	    				<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />{{ f.folder }}
-						<span class="show">v</span>
-	    	</li>	
-				{% for key in f.memotitle.titre %}
-	    			<li class="menu_slice">
-	    				- {{ key }}
-	    			</li>
-    			{% endfor %}
-
-		{% endfor %}
-    		</ul>
+  {{ render(controller('MemoriesBoxBundle:Box:Menu')) }}
     		 
     	</div>
 		<div id="menu_bottom">+</div>
 		
 		<div id="content">
-			<div id="content_box_head">Un truc dedans</div>
+			<div id="content_box_head">Le menu > Fil > d'ariane</div>
 			<div id="content_box">
 				{% block body %}{% endblock %}
 			</div>

@@ -29,7 +29,8 @@ input[type="submit"]{
 			text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 	
-a{ 		 color: #1581c3; text-decoration: none; }
+a{ color: #fff ; text-decoration: none; }
+
 a:hover{ color: #000;    text-decoration: none; }
 
 div.error{ color: red; }
@@ -107,6 +108,22 @@ textarea:-ms-input-placeholder {
 	
 }
 
+#menu_header{
+	margin-left: 260px;
+	float: left;
+	line-height: 2.6em;
+}
+
+	#menu_header ul.menu{
+		color: #FFF;
+		margin: 0;
+	}
+	
+	#menu_header li.menu{
+		padding: 6px 8px;
+		display: inline-block;
+		border-right: 1px solid #FFF;
+	}
 #recherche_box{ width: 30%; float: right; margin-right: 40px;  padding: 5px;}
 
 	#recherche_box input[type="text"]

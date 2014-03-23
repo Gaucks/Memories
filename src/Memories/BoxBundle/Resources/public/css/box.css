@@ -19,6 +19,19 @@
 		float: left; 
 	}
 	
+		#box_add_last_new_ctleft span.date{ 
+			color: yellow;
+		}
+	
+		#box_add_last_new_ctleft ul.activity{
+			color: #fff;
+		}
+		
+		#box_add_last_new_ctleft li.activity{
+			
+		}
+
+	
 	#box_add_last_new_ctleft img#headline{ }
 	
 	#box_add_last_new_ctright{ width:50%; float: right }
