@@ -1,0 +1,196 @@
+html, body { height: 100%; }
+
+body{
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	overflow: auto
+}
+
+h1 { font-size: 1.5em; color: #1581c3  }
+h2 { font-size: 1.25em; color: #1581c3 }
+h3 { font-size: 1.1em; color: #1581c3  }
+h4 { font-size: 0.9em; color: #1581c3  }
+
+.clear{ clear:both }
+
+input[type="text"], input[type="email"],input[type="password"], textarea{ font-size: 1em; font-family: georgia; font-style: italic; }
+input[type="submit"]{
+			border-radius:20px;
+			background: #b1c70d;
+			border: 1px solid #ccc;
+			padding: 5px 20px;
+			color: #fff;
+			text-transform: uppercase;
+			margin-top: 6px;
+			text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+	
+a{ 		 color: #1581c3; text-decoration: none; }
+a:hover{ color: #000;    text-decoration: none; }
+
+div.error{ color: red; }
+
+div#notice{ background: #B1C70F; text-align: center; padding: 7px 0; position: absolute; width: 100%; top: 0 }
+div#notice h3#message{ color: white; line-height: 1.5em; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);}
+
+div#notice_error{ background: #e54f47; text-align: center; padding: 7px 0; position: absolute; width: 100%; top: 0 }
+div#notice_error h3#message{ color: white; line-height: 1.5em; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);}
+
+div#content_error{ background: #fff; border: 1px solid #ccc; border-radius: 7px; width: 100%; padding: 20px; }
+div#content_error h3#error_title{ margin-bottom: 10px;}
+
+input::-webkit-input-placeholder {
+	font-family: georgia;
+	font-style: italic;
+	color: #76726d;
+
+}
+input::-moz-placeholder {
+	font-family: georgia;
+	font-style: italic;
+	color: #76726d;
+
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	font-family: georgia;
+	font-style: italic;
+	color: #76726d;
+
+}
+input:-ms-input-placeholder { 
+	font-family: georgia;
+	font-style: italic;
+	color: #76726d;
+}
+
+textarea::-webkit-input-placeholder {
+	font-family: georgia;
+	font-style: italic;
+	color: #76726d;
+}
+textarea::-moz-placeholder {
+	font-family: georgia;
+	font-style: italic;
+	color: #76726d;
+}
+textarea:-moz-placeholder {   /* Older versions of Firefox */
+	font-family: georgia;
+	font-style: italic;
+	color: #76726d;
+}
+textarea:-ms-input-placeholder { 
+	font-family: georgia;
+	font-style: italic;
+	color: #76726d;
+}
+
+/********************/
+/*! Partie du site  */
+/********************/
+
+
+#site{
+	position: relative;
+	background-color: #f0f0f0;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+#header{
+	background: #4679bd;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#recherche_box{ width: 30%; float: right; margin-right: 40px;  padding: 5px;}
+
+	#recherche_box input[type="text"]
+	{ 
+		width: 100%;
+		border: 1px solid transparent;
+		border-top: none;
+		border-bottom: 1px solid #DDD;
+		box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+		outline: 0;
+		padding: 8px 6px 6px 6px;
+	}
+	
+#subHeader{ height: 5px; background: url('../images/bg.png'); }
+
+/*********************/
+/*! Le menu du site  */
+/*********************/
+
+#menu{
+	float: left;
+	padding: 20px 0 20px 0;
+	background-color: #FFF;
+	width: 260px;
+	max-width: 260px;
+	height: 100%;
+	position: absolute;
+}
+
+#menu ul.menu{ background: #000 }
+#menu li.menu{ background: #fdfdfd; border-bottom: 2px dotted #ccc; padding: 5px 10px 5px 20px }
+#menu li.menu_slice{ background: #f0f0f0; border-bottom: 2px dotted #ccc; padding: 5px 10px 5px 30px; font-style: italic }		
+#menu span.show{ float: right; font-weight: bold; }
+#menu img.menuimg{ width: 20px; vertical-align: sub; margin: 0 5px -3px 0 }
+
+#menuAvatar{ border: 1px solid #f0f0f0; }
+#menuAvatar ul.log{ }
+#menuAvatar li.log{ text-align: left; margin: 0; display: inline-block;}
+#menuAvatar img.avatar{ width: 36px; float: left; border-radius: 18px; border: 1px solid #ccc; margin: 5px 10px}
+#menuAvatar img.menuAvatar{ width: 24px; margin: 0; float: left}
+#menuAvatar h3{ background: url('../images/bg.png'); color: #FFF; margin-bottom: 5px }
+
+#menu_bottom{ 
+	height: 20px; 
+	padding: 5px 20px; 
+	position: fixed; 
+	bottom: 0; 
+	background: #fdfdfd; 
+	border-top: 2px solid #ccc; 
+	width: 220px; 
+	font-weight: bold; 
+	font-size: 1.5em; 
+	text-align: right
+}
+
+
+/*************************/
+/*! Le Contenu du site  */
+/***********************/
+
+#content{
+	background: #f0f0f0; 
+	margin-left: 260px;
+	padding: 20px;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+#content_box_head{ 
+	background: #FFF;
+	border: 1px solid #ccc;
+	padding: 10px 20px; 
+	margin-bottom: 20px; 
+	border: 1px solid #C0C0C0; 
+	box-shadow: inset 0 1px 2px #e4e4e4; 
+}
+
+#content_box{
+	background: #FFF;
+	border: 1px solid #ccc; 
+	padding: 20px;
+	border: 1px solid #C0C0C0;
+	box-shadow: inset 0 1px 2px #e4e4e4;
+}
+
+
+

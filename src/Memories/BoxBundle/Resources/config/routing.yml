@@ -1,0 +1,3 @@
+memories_box_homepage:
+    pattern:  /
+    defaults: { _controller: MemoriesBoxBundle:Box:index }

@@ -1,0 +1,4 @@
+memories_box:
+    resource: "@MemoriesBoxBundle/Resources/config/routing.yml"
+    prefix:   /
+

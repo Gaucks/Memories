@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% stylesheets filter='cssrewrite'
+	        		'bundles/memoriesbox/css/reset.css'
+	        		'bundles/memoriesbox/css/base.css'
+	        		'bundles/memoriesbox/css/box.css'
+	         %}
+				<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+	  	    {% endstylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    
+    <div id="site">
+    
+    	<div id="header">
+    		<div id="recherche_box"><input type="text" placeholder="Ceci est un vrai champ de recherche"/></div>
+    		<div class="clear"></div>
+    	 </div>
+    	<div id="subHeader"> </div>
+    	
+    	<div id="menu">
+    		<div id="menuAvatar">
+				<h3>
+					<img src="{{ asset('bundles/memoriesbox/images/no_avatar.png') }}" class="avatar" alt="Une image" />
+					Amandine Gautier
+				</h3>
+				<ul class="log">
+					<li class="log">
+						<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuAvatar" alt="Une image" />
+					</li>
+					<li class="log">
+						<img src="{{ asset('bundles/memoriesbox/images/menu/Gear.png') }}" class="menuAvatar" alt="Une image" />
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+    		
+    		<ul class="menu">
+    		
+    			<li class="menu">
+    				<img src="{{ asset('bundles/memoriesbox/images/menu/Gear.png') }}" class="menuimg" alt="Une image" />Symfony2
+					<span class="show">v</span>
+    			</li>
+    			<li class="menu">
+    				<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />Jquery
+					<span class="show">v</span>
+    			</li>
+    			
+    			<li class="menu">
+    				<img src="{{ asset('bundles/memoriesbox/images/menu/Gear.png') }}" class="menuimg" alt="Une image" />Symfony2
+					<span class="show">v</span>
+    			</li>
+    			<li class="menu">
+    				<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />Jquery
+					<span class="show">v</span>
+    			</li>
+    			
+    			<li class="menu">
+    				<img src="{{ asset('bundles/memoriesbox/images/menu/Gear.png') }}" class="menuimg" alt="Une image" />Symfony2
+					<span class="show">v</span>
+    			</li>
+    			<li class="menu">
+    				<img src="{{ asset('bundles/memoriesbox/images/menu/Connections.png') }}" class="menuimg" alt="Une image" />Jquery
+					<span class="show">v</span>
+    			</li>
+    			<li class="menu_slice">
+    				- Jquery
+					<li class="menu_slice">
+    				- Jquery
+    			</li>
+    			<li class="menu_slice">
+    				- Aligner les 3 colonnes en hauteur
+    			</li>
+    			</li>
+
+    		</ul>
+    		 
+    	</div>
+		<div id="menu_bottom">+</div>
+		
+		<div id="content">
+			<div id="content_box_head">Un truc dedans</div>
+			<div id="content_box">
+				{% block body %}{% endblock %}
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+        	
+	</div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
