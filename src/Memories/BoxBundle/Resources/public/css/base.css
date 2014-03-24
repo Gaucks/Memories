@@ -31,7 +31,7 @@ input[type="submit"]{
 	
 a{ color: #fff ; text-decoration: none; }
 
-a:hover{ color: #000;    text-decoration: none; }
+a:hover{ color: #000; text-decoration: none; }
 
 div.error{ color: red; }
 
@@ -109,21 +109,24 @@ textarea:-ms-input-placeholder {
 }
 
 #menu_header{
-	margin-left: 260px;
+	margin-left: 100px;
 	float: left;
 	line-height: 2.6em;
 }
-
+	#menu_header a{ text-shadow: 0px 0px 1px black; }
+	#menu_header a:hover{ text-shadow: 0px 0px 1px #999; }
 	#menu_header ul.menu{
 		color: #FFF;
 		margin: 0;
+		margin: 6px 0;
 	}
 	
 	#menu_header li.menu{
-		padding: 6px 8px;
+		padding: 0px 10px;
 		display: inline-block;
-		border-right: 1px solid #FFF;
+		text-shadow: 0px 0px 1px black;
 	}
+	
 #recherche_box{ width: 30%; float: right; margin-right: 40px;  padding: 5px;}
 
 	#recherche_box input[type="text"]

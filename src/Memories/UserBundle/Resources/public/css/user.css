@@ -1,0 +1,26 @@
+#register_box{ background: #edf8fa; width: auto; border-bottom: 2px solid #e1e9eb; padding: 50px 0 }
+
+#register_ct{ width: 80%; margin: 0 auto }
+
+#register{
+	float: right; 
+	width: 30%;
+	background: #FFF;
+	padding: 20px;
+	border: 1px solid #edf8fa;
+	box-shadow: inset 0 1px 2px #e4e4e4;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+	#register_left{ float: left; width: 60% }
+	#register_left h1{ margin-bottom: 20px;}
+	
+	#register label.required{ display:block }
+	
+	#register input[type="text"], input[type="email"],input[type="password"], textarea{ 
+		font-family: georgia; 
+		font-style: italic;
+		width: 90%;
+		padding: 6px 8px;
+		margin-bottom: 10px;
+	}

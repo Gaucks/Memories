@@ -1,0 +1,23 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<div id="register_box">
+	<div id="register_ct">
+	<div id="register_left">
+		<h1>Un titre pour l'identification</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+		et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. 
+		<br/><br/>
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 		occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+<div id="register">
+
+		<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+		    {{ form_widget(form) }}
+		    <div>
+		        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+		    </div>
+		</form>
+</div>
+<div class="clear"></div>
+</div>
+
+</div>

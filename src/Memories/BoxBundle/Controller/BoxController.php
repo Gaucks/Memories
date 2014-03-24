@@ -16,7 +16,7 @@ class BoxController extends Controller
 	    return $this->render('MemoriesBoxBundle:Box:Add/addFolder.html.twig');
     }
     
-    public function MenuAction()
+    public function menuAction()
     {
     	$folder = array(
 						array('folder' => 'Symfony2', 'memotitle' => array('titre' => 

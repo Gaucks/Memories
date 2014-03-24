@@ -1,0 +1,7 @@
+parameters:
+#    memories_user.example.class: Memories\UserBundle\Example
+
+services:
+#    memories_user.example:
+#        class: %memories_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

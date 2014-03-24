@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Memories | Inscription{% endblock %}</title>
+        {% stylesheets filter='cssrewrite'
+	        		'bundles/memoriesbox/css/reset.css'
+	        		'bundles/memoriesbox/css/base.css'
+	        		'bundles/memoriesbox/css/box.css'
+	        		'bundles/memoriesUser/css/user.css'
+	         %}
+				<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+	  	    {% endstylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+<div id="site">
+	<div id="header">
+    		<div id="menu_header">
+    			<ul class="menu">
+    				<li class="menu"><a href="{{ path('homepage') }}" alt="" />Accueil Memories</a> </li>
+    				<li class="menu"><a href="{{ path('fos_user_registration_register') }}" alt="" />Inscription</a> </li>
+    			</ul>
+    		</div>
+    		<div id="recherche_box"><input type="text" placeholder="Ceci est un vrai champ de recherche"/></div>
+    		<div class="clear"></div>
+    	 </div>
+    	<div id="subHeader"> </div>
+
+	{% block body %}
+	
+	{% endblock %}
+
+</div>
+
+</body>
+</html>
