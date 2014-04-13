@@ -11,21 +11,28 @@
 	         %}
 				<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
 	  	    {% endstylesheets %}
+	  	    
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        
     </head>
     <body>
-<div id="site">
-	<div id="header">
+     <div id="header">
+    	<div id="header_box">
     		<div id="menu_header">
     			<ul class="menu">
-    				<li class="menu"><a href="{{ path('homepage') }}" alt="" />Accueil Memories</a> </li>
+    				<li class="menu"><a href="{{ path('homepage') }}" class="" alt="" />Accueil</a></li>
+    				<li class="menu"><a href="{{ path('homepage') }}" class="" alt="" />Nouveau mémo</a></li>
+    				<li class="menu"><a href="{{ path('addfolder') }}" alt="" />Nouveau dossier</a> </li>
     				<li class="menu"><a href="{{ path('fos_user_registration_register') }}" alt="" />Inscription</a> </li>
     			</ul>
     		</div>
     		<div id="recherche_box"><input type="text" placeholder="Ceci est un vrai champ de recherche"/></div>
     		<div class="clear"></div>
     	 </div>
+    </div>
     	<div id="subHeader"> </div>
+    	
+<div id="site">
 
 	{% block body %}
 	

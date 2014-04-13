@@ -15,12 +15,12 @@
     </head>
     <body>
     
-    <div id="site">
-    
-    	<div id="header">
+    <div id="header">
+    	<div id="header_box">
     		<div id="menu_header">
     			<ul class="menu">
-    				<li class="menu">Nouveau mémo</li>
+    				<li class="menu"><a href="{{ path('homepage') }}" class="" alt="" />Accueil</a></li>
+    				<li class="menu"><a href="{{ path('homepage') }}" class="" alt="" />Nouveau mémo</a></li>
     				<li class="menu"><a href="{{ path('addfolder') }}" alt="" />Nouveau dossier</a> </li>
     				<li class="menu"><a href="{{ path('fos_user_registration_register') }}" alt="" />Inscription</a> </li>
     			</ul>
@@ -28,7 +28,10 @@
     		<div id="recherche_box"><input type="text" placeholder="Ceci est un vrai champ de recherche"/></div>
     		<div class="clear"></div>
     	 </div>
+    </div>
     	<div id="subHeader"> </div>
+    
+    <div id="site">
     	
     	<div id="menu">
     		<div id="menuAvatar">
@@ -50,10 +53,9 @@
   {{ render(controller('MemoriesBoxBundle:Box:Menu')) }}
     		 
     	</div>
-		<div id="menu_bottom">+</div>
 		
 		<div id="content">
-			<div id="content_box_head">Le menu > Fil > d'ariane</div>
+			<div id="content_box_head">Utilisateur / Repertoire </div>
 			<div id="content_box">
 				{% block body %}{% endblock %}
 			</div>
